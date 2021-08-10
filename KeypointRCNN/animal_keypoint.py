@@ -1,7 +1,11 @@
 import os
 import cv2
-import torch
 import numpy as np
+from typing import Tuple, Sequence, Callable, Dict
+
+import torch
+from torch import Tensor
+from torch.utils.data import Dataset
 
 class KeypointDataset(Dataset):
     def __init__(
