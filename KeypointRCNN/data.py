@@ -2,14 +2,14 @@ import pandas as pd
 from animal_keypoint import KeypointDataset
 
 import torch
-from torch import Tuple
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
 
+from typing import Tuple 
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
-def collate_fn(batch: torch.Tensor) -> Tuple:
+def collate_fn(batch: torch.Tensor)->Tuple:
     return tuple(zip(*batch))
 
 # Data Transform & Train-Test-Split
