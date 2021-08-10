@@ -16,7 +16,7 @@ def train(model, train_loader, optimizer, epoch, device = 'cuda'):
         losses = model(images, targets)       # calculate loss
 
         loss = losses['loss_keypoint']        # keypoint loss
-        loss.backward()                       # loss back propagatioin
+        loss.backward()                       # loss back propagation
         optimizer.step()                      # parameter update
 
         if (batch_idx+1) % 200 == 0:
@@ -42,7 +42,7 @@ def train_model(train_loader, val_loader, num_epochs = 30, device= 'cuda'):
     model = get_model()
     model.to(device)
     
-    best_loss = 999999  # 가장 낮은 loss 초기화
+    best_loss = 999999  # initialize best loss
     optimizer = optim.SGD(model.parameters(), lr=1e-4, momentum=0.9, weight_decay=5e-4)
 
     for epoch in range(1, num_epochs+1):
