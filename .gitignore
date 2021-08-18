@@ -1,5 +1,6 @@
 ## ignore files
 *.pdf
+visual.ipynb
 
 ## ignore directory
 image/
