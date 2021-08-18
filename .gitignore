@@ -1,2 +1,8 @@
 ## ignore files
 *.pdf
+
+## ignore directory
+image/
+
+## ignore large files
+array_train.npy
