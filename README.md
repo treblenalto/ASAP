@@ -1,5 +1,5 @@
 # ASAP: AI State Analysis of Pets🐕
-Recognition of Pet Actions Using Keypoint Detection and Skeleton-Based Pose Estimation.<br>
+Recognition of Pet Actions Using Keypoint Detection and Skeleton-Based Action Recognition.<br>
 (2021.07.05~2021.08.23)
 
 ## Overview
@@ -8,7 +8,7 @@ Recognition of Pet Actions Using Keypoint Detection and Skeleton-Based Pose Esti
 ## Data
 AI-Hub에서 제공하는 [반려동물 구분을 위한 동물 영상](https://aihub.or.kr/aidata/34146) 데이터 중 개의 행동영상 및 영상 데이터만을 사용하여 모델 학습을 진행하였습니다.<br>
 
-Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이미지)를, Action Detection 모델 학습시 라벨 데이터를 사용하였으며 각 학습 데이터의 형식은 다음과 같습니다.
+Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이미지)를, Action Recognition 모델 학습시 라벨 데이터를 사용하였으며 각 학습 데이터의 형식은 다음과 같습니다.
 * **Keypoint Detection** <br>
   | Original | Keypoint | Label |
   | :------: | :------: | :---- |
@@ -17,7 +17,7 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
   키포인트 감지 모델 학습을 위해서는 키포인트 좌표 데이터가 필요합니다. 다음과 같은 csv 파일 형식으로 이미지의 경로와 키포인트 정보를 구성해 주세요. <br>
   <img width="800" alt="data-csv" src="https://user-images.githubusercontent.com/63901494/129934622-ec6e8130-50de-4893-92d6-7d040220cac9.png">
 
-* **Action Detection** <br>
+* **Action Recognition** <br>
   행동 분류 모델의 학습을 위해서는 키포인트 좌표값과 각 포인트에 대한 confidence score, 영상의 라벨인 action class 정보가 필요합니다. 다음과 같은 형식의 json 파일을 각 영상에 대해 구성해 주세요.
   ```
   {
@@ -38,11 +38,12 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
     ...]
   }
   ```
+  영상의 각 프레임별 스켈레톤 정보로부터 앉기, 두 앞발을 들어 올림, 앞발 하나를 들어 올림, 몸을 턴다, 엎드리기, 걷거나 뜀, 꼬리를 위로 올리고 흔듦, 빙글빙글 돈다, 마운팅, 꼬리가 아래로 향함 과 같은 행동 분류를 진행하였습니다. 
 
 ## Models
 * [Keypoint Detection] **Keypoint RCNN** - [Mask-RCNN, 2017 (Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick)](https://arxiv.org/pdf/1703.06870v3.pdf)
 * [Keypoint Detection] **HR-Net** - [Deep High-Resolution Representation Learning for Visual Recognition, 2019 (Jingdong Wang, Ke Sun, Tianheng Cheng, Borui Jiang, Chaorui Deng, Yang Zhao, Dong Liu, Yadong Mu, Mingkui Tan, Xinggang Wang, Wenyu Liu, Bin Xiao)](https://arxiv.org/pdf/1908.07919.pdf)
-* [Action Detection] **ST-GCN** - [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition, 2018 (Sijie Yan, Yuanjun Xiong, Dahua Lin)](https://arxiv.org/pdf/1801.07455.pdf)
+* [Action Recognition] **ST-GCN** - [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition, 2018 (Sijie Yan, Yuanjun Xiong, Dahua Lin)](https://arxiv.org/pdf/1801.07455.pdf)
 
 해당 모델들은 모두 Pytorch 프레임워크를 사용하여 학습하였습니다. 
 
