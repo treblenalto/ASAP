@@ -1,4 +1,4 @@
-# ASAP: AI State Analysis of Pets🐕
+# ASAP: AI State Analysis of Pets🐾
 Recognition of Pet Actions Using Keypoint Detection and Skeleton-Based Action Recognition.<br>
 (2021.07.05~2021.08.23)
 
