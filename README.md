@@ -55,7 +55,7 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
 ## Result
 Streamlit 라이브러리를 통해 서비스 프로토타입을 제작하였습니다. <br>
 
-<img width="600" alt="demo-streamlit" src="https://user-images.githubusercontent.com/63901494/130187131-cff4b3e4-0ac0-4475-a6ec-8433e875bbc0.gif">
+<img width="600" alt="demo-streamlit" src="https://user-images.githubusercontent.com/63901494/130213347-a7735515-7440-4a09-8431-60786c1818ac.gif">
 
 ## Usage
 학습시 모델의 용량 문제로 인해 GPU 환경에서 실행하기를 권장합니다. <br>
