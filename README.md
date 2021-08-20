@@ -47,8 +47,10 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
 
 해당 모델들은 모두 Pytorch 프레임워크를 사용하여 학습하였습니다. 
 
-**Flowchart** <br> #### 이미지 바꾸기 #### <br>
-<img width="500" alt="tech stack" src="https://user-images.githubusercontent.com/63901494/129585982-4705c85e-c81b-4b97-87ef-20a37119d999.png">
+<!--
+**Flowchart** <br>
+<img width="500" alt="tech stack" src="https://user-images.githubusercontent.com/63901494/129585982-4705c85e-c81b-4b97-87ef-20a37119d999.png"> 
+-->
 
 ## Result
 Streamlit 라이브러리를 통해 서비스 프로토타입을 제작하였습니다. <br>
@@ -85,6 +87,17 @@ python main.py recognition -c config/st_gcn/kinetics-skeleton/train.yaml --devic
 ```
 ### 3. Inference
 ```
+cd demo
+pip install -r requirements.txt
+python torchlight/setup.py install
+```
+Terminal
+```
+python test_final.py recognition -c work_dir/stgcn_demo.yaml
+```
+Streamlit
+```
+streamlit run app.py
 ```
 
 ## Reference
