@@ -103,6 +103,8 @@ streamlit run app.py
 ## Reference
 * [pytorch/vision](https://github.com/pytorch/vision)
 * [yysijie/st-gcn](https://github.com/yysijie/st-gcn)
+* [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
+* [MaiHon/dacon-motion-keypoints](https://github.com/MaiHon/dacon-motion-keypoints)
 
 ## Contributors
 <table>
