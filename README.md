@@ -43,7 +43,7 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
 
 ## Models
 * [Keypoint Detection] **Keypoint RCNN** - [Mask-RCNN, 2017 (Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick)](https://arxiv.org/pdf/1703.06870v3.pdf)
-* [Keypoint Detection] **HR-Net** - [Deep High-Resolution Representation Learning for Visual Recognition, 2019 (Jingdong Wang, Ke Sun, Tianheng Cheng, Borui Jiang, Chaorui Deng, Yang Zhao, Dong Liu, Yadong Mu, Mingkui Tan, Xinggang Wang, Wenyu Liu, Bin Xiao)](https://arxiv.org/pdf/1908.07919.pdf)
+* [Keypoint Detection] **HRNet** - [Deep High-Resolution Representation Learning for Visual Recognition, 2019 (Jingdong Wang, Ke Sun, Tianheng Cheng, Borui Jiang, Chaorui Deng, Yang Zhao, Dong Liu, Yadong Mu, Mingkui Tan, Xinggang Wang, Wenyu Liu, Bin Xiao)](https://arxiv.org/pdf/1908.07919.pdf)
 * [Action Recognition] **ST-GCN** - [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition, 2018 (Sijie Yan, Yuanjun Xiong, Dahua Lin)](https://arxiv.org/pdf/1801.07455.pdf)
 
 해당 모델들은 모두 Pytorch 프레임워크를 사용하여 학습하였습니다. 
@@ -73,9 +73,9 @@ cd KeypointRCNN
 pip install -r requirements.txt
 python train.py
 ```
-[HR-Net]()
+[HRNet]()
 ```
-cd HR-Net
+cd HRNet
 pip install -r requirements.txt
 python train.py
 ```
