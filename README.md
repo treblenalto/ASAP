@@ -4,10 +4,10 @@ Analysis of Pets Using Keypoint Detection and Skeleton-Based Action Recognition.
 
 ## Overview
 ASAP(AI State Analysis of Pets)는 반려동물의 행동을 분석해주는 서비스입니다. <br>
-반려견의 동영상을 입력시 키포인트 인식을 기반으로 반려견의 행동을 알려줍니다. 
+반려동물을 담은 영상을 올릴 시 키포인트 인식을 기반으로 행동을 알려줍니다. 
 
 ## Data
-AI-Hub에서 제공하는 [반려동물 구분을 위한 동물 영상](https://aihub.or.kr/aidata/34146) 데이터 중 개의 행동영상 및 영상 데이터만을 사용하여 모델 학습을 진행하였습니다.<br>
+AI-Hub에서 제공하는 [반려동물 구분을 위한 동물 영상](https://aihub.or.kr/aidata/34146) 데이터 중 개(반려견)의 데이터만을 사용하여 모델 학습을 진행하였습니다.<br>
 
 Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이미지)를, Action Recognition 모델 학습시 라벨 데이터를 사용하였으며 각 학습 데이터의 형식은 다음과 같습니다.
 * **Keypoint Detection** <br>
