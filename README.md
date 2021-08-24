@@ -94,13 +94,11 @@ python main.py recognition -c config/st_gcn/kinetics-skeleton/train.yaml --devic
 cd demo
 pip install -r requirements.txt
 python torchlight/setup.py install
-```
-Terminal
-```
+
+// Test
 python test_final.py recognition -c work_dir/stgcn_demo.yaml
-```
-Streamlit
-```
+
+// Streamlit Demo
 streamlit run app.py
 ```
 
