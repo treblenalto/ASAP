@@ -56,11 +56,6 @@ Keypoint Detection 모델 학습시 영상 데이터(영상의 프레임 별 이
 <img width="500" alt="tech stack" src="https://user-images.githubusercontent.com/63901494/129585982-4705c85e-c81b-4b97-87ef-20a37119d999.png"> 
 -->
 
-## Result
-Streamlit 라이브러리를 통해 서비스 프로토타입을 제작하였습니다. <br>
-
-<img width="600" alt="demo-streamlit" src="https://user-images.githubusercontent.com/63901494/130213347-a7735515-7440-4a09-8431-60786c1818ac.gif">
-
 ## Usage
 학습시 모델의 용량 문제로 인해 GPU 환경에서 실행하기를 권장합니다. <br>
 Google Colab을 활용할 시 [런타임] - [런타임 유형 변경] - [GPU]로 설정을 바꿔주세요.
@@ -101,6 +96,11 @@ python test_final.py recognition -c work_dir/stgcn_demo.yaml
 // Streamlit Demo
 streamlit run app.py
 ```
+
+## Result
+Streamlit 라이브러리를 통해 서비스 프로토타입을 제작하였습니다. <br>
+
+<img width="600" alt="demo-streamlit" src="https://user-images.githubusercontent.com/63901494/130213347-a7735515-7440-4a09-8431-60786c1818ac.gif">
 
 ## Reference
 * [pytorch/vision](https://github.com/pytorch/vision)
