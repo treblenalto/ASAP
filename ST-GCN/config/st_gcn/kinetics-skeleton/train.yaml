@@ -1,0 +1,37 @@
+work_dir: ./model_weights
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  random_choose: True
+  random_move: True
+  window_size: 150 
+  data_path: ./data/train/array_train.npy
+  label_path: ./data/train/train_class_changed.pkl
+
+test_feeder_args:
+  data_path: ./data/test/array_test.npy
+  label_path: ./data/test/test_class_changed.pkl
+
+# model
+model: net.st_gcn.Model
+model_args:
+  in_channels: 3
+  num_class: 10 
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'customer settings'  
+    strategy: 'spatial'
+
+# training
+device: [0,1,2,3]
+batch_size: 256  
+test_batch_size: 128  
+
+#optim
+base_lr: 0.5 
+step: [20,30,40,50]
+num_epoch: 50 
+
+
+

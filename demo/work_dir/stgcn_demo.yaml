@@ -1,0 +1,22 @@
+weights: ./work_dir/stgcn_weight.pt
+
+# feeder
+feeder: feeder.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/array_demo.npy
+  label_path: ./data/pickle_demo.pkl
+  
+# model
+model: net.st_gcn.Model
+model_args:
+  in_channels: 3
+  num_class: 10
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'customer settings'  
+    strategy: 'spatial'
+
+# test 
+phase: test
+device: 0
+test_batch_size: 128
