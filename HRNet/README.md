@@ -1,4 +1,5 @@
-# 해당 모델은 Keypoint 예측시 활용한 모델입니다.
+# HRNet
+해당 모델은 Keypoint 예측시 활용한 모델입니다.
 
 ## Installation
 pytorch: 1.9.0+cu102
