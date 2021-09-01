@@ -1,6 +1,8 @@
 ## ignore files
 *.pdf
+*.pth 
 *.pptx
+*.pth
 visual.ipynb
 
 ## ignore directory
@@ -8,3 +10,4 @@ image/
 
 ## ignore large files
 array_train.npy
+*.pth
