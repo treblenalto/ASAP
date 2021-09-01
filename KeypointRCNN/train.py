@@ -70,7 +70,7 @@ def main():
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     train_img_path = '../images/images_1'
-    train_key_path = './annotations/annotations_1.csv'
+    train_key_path = '../data/annotations_1.csv'
 
     train_loader, valid_loader = load_data(train_img_path, train_key_path)
     train_model(train_loader, valid_loader, num_epochs = 5, device = DEVICE) 
