@@ -6,36 +6,51 @@
 ## Structure
 ```
 ST-GCN
-├── README.md
-├── requirements.txt
-├── main.py
-├── config
-│   └───st_gcn
-│       └───kinetics-skeleton
-│           └───train.yaml
-├── data
-│   ├───test
-│   │   ├───array_test.npy
-│   │   └───test_class_changed.pkl
-│   └───train
-│       ├───array_train.npy         // 위 링크에서 다운받으실 수 있습니다.
-│       └───train_class_changed.pkl
-├── feeder
-│   ├───feeder.py
-│   └───tools.py
-├── net
-│   ├───st_gcn.py
-│   └───utils
-│       ├───graph.py
-│       └───tgcn.py
-├── processor
-│   ├───processor.py
-│   ├───recognition.py
-│   └───io.py
-├── torchlight
-│   ├───torchlight
-│   │   ├───io.py
-│   │   └───gpu.py
-│   └───setup.py
-│ 
+│  README.md
+│  requirements.txt
+│  .gitattributes
+│  main.py
+│  
+├─config
+│  └─st_gcn
+│      └─kinetics-skeleton       
+│              train.yaml        
+│
+├─data
+│  ├─test
+│  │      array_test.npy
+│  │      test_class_changed.pkl
+│  │      
+│  └─train
+│         array_train.npy           // 위 링크에서 다운받으실 수 있습니다.
+│         train_class_changed.pkl
+│
+├─feeder
+│      feeder.py
+│      tools.py
+│      __init__.py
+│
+├─model_weights                     // 학습된 weight 저장되는 곳
+├─net
+│  │  st_gcn.py
+│  │  __init__.py
+│  │  
+│  └─utils
+│          graph.py
+│          tgcn.py
+│          __init__.py
+│
+├─processor
+│      io.py
+│      processor.py
+│      recognition.py
+│      __init__.py
+│
+└─torchlight
+    │  setup.py
+    │
+    └─torchlight
+            gpu.py
+            io.py
+            __init__.py
 ```
