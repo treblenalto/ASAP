@@ -8,3 +8,4 @@ image/
 
 ## ignore large files
 array_train.npy
+pose_hrnet_w48_384x288.pth
