@@ -71,7 +71,7 @@ cd KeypointRCNN
 pip install -r requirements.txt
 python train.py
 ```
-[HRNet]()
+[HRNet](./HRNet)
 ```
 cd HRNet
 pip install -r requirements.txt
