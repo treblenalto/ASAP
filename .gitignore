@@ -1,3 +1,6 @@
 ## ignore files
 *.pdf
+*.pth 
+*.pptx
 *.pth
+visual.ipynb
