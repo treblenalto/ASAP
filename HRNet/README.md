@@ -8,7 +8,7 @@ albumentations: 0.4.6
 pip install albumentations==0.4.6
 ```
 ## Model
-학습시 [공식 레포지토리](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)에서 제공한 pretrained 모델 중 `pose_hrnet_w48_384x288.pth`를 사용하였습니다.
+학습시 [leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)에서 제공한 pretrained 모델 중 `pose_hrnet_w48_384x288.pth`를 사용하였습니다.
 
 ## Structure
 ```
