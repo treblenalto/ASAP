@@ -30,7 +30,7 @@ HRNet
 │      heatmap_train.yaml
 │
 ├─pretrain
-│      pose_hrnet_w48_384x288.pth
+│      pose_hrnet_w48_384x288.pth   // pretrained model
 │      
 └─weight
 ```
