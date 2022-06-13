@@ -114,7 +114,7 @@ Streamlit 라이브러리를 통해 서비스 프로토타입을 제작하였습
     <td align="center"><a href="https://github.com/Taehee-K"><img src="https://user-images.githubusercontent.com/63901494/129619988-1a959834-313c-443c-84c2-4fc2db8ef8f6.jpg" width="100" height="100"><br /><sub><b>김태희</b></sub></td>
     <td align="center"><a href="https://github.com/wonjae-yang"><img src="https://user-images.githubusercontent.com/63901494/129583717-42d19759-7586-4de0-aea9-5e935295f4dd.png" width="100" height="100"><br /><sub><b>양원재</b></sub></td>
     <td align="center"><a href="https://github.com/SK-jeong"><img src="https://user-images.githubusercontent.com/63901494/129582209-1d1d194e-cf3e-48d6-b097-35a7b855a683.jpg" width="100" height="100"><br /><sub><b>정성경</b></sub></td>
-    <td align="center"><a href="https://github.com/miso-choi"><img src="https://user-images.githubusercontent.com/63901494/129582741-870a71c4-6a3a-4c99-9e86-e1cd0290070a.png" width="100" height="100"><br /><sub><b>최미소</b></sub></td>
+    <td align="center"><a href="https://github.com/miso-choi"><img src="https://user-images.githubusercontent.com/78155086/132087934-79862c4f-7076-4e2c-907b-a456d6980b90.jpeg" width="100" height="100"><br /><sub><b>최미소</b></sub></td>
     <td align="center"><a href="https://github.com/HwangChaewon"><img src="https://user-images.githubusercontent.com/63901494/129582279-430df734-43ae-451a-991d-7bb62a170eb0.png" width="100" height="100"><br /><sub><b>황채원</b></sub></td>
     <td align="center"><a href="https://github.com/HyeJung-Hwang"><img src="https://user-images.githubusercontent.com/63901494/129582233-ccf2137f-89db-4559-9bc3-be23a133e2a3.png" width="100" height="100"><br /><sub><b>황혜정</b></sub></td>
   </tr>
